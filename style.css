@@ -5,7 +5,7 @@ body{
 header{
     color:white;
     margin-top:30px;
-    margin-left:15px;
+    margin-left:25px;
     margin-bottom:5px;
 }
 
@@ -16,26 +16,67 @@ header{
     grid-template-rows: 350px 200px  350px 125px;
     grid-gap: 10px;
     color: white;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .box{
     display:grid;
+    height: 100%;
     align-items:center;
     justify-content:center;
-    background-color: blue;
+    grid-row: span 1;
+    grid-column: span 1;
 }
 .one,.three{
     display:grid;
+    height:100%;
     grid-gap:5px;
-    color:white;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 1fr;
-
 }
 .subbox{
-    background-color:teal;
+    background-color:cadetblue;
 }
-.textHappy{
-    background-color:red;
+.texthappy{
+    font-size: 30px;
+    word-spacing: 30px;
+    line-height:55px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: red;
+}
+.texthappy p{
+    margin-left:20px;
+    font-weight: bold;
+}
+
+.textCupcake{
+    background-color:rgb(73, 170, 170);
+}
+.textCupcake p{
+    margin-left:15px;
+    margin-right:15px;
+    line-height:30px;
+    font-weight: 40px;
+}
+.two{
+    background-image: url(images/tie.png);
+    background-position: 15% -30%;
+}
+.imgSign{
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-image:url(images/sign.jpg);
+    background-position: 18% 0%;
+}
+.textLorem p{
+    margin-left:15px;
+    margin-right:15px;
+    line-height:30px;
+    font-weight: 40px;
+}
+.four{
+    background-image: url(images/moped.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: 0% 59%;
 }
