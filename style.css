@@ -1,0 +1,41 @@
+body{
+    height: 100%;
+    background-color: rgb(102, 47, 47);
+}
+header{
+    color:white;
+    margin-top:30px;
+    margin-left:15px;
+    margin-bottom:5px;
+}
+
+.grid{
+    display:grid;
+    height:100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 200px  350px 125px;
+    grid-gap: 10px;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.box{
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    background-color: blue;
+}
+.one,.three{
+    display:grid;
+    grid-gap:5px;
+    color:white;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+
+}
+.subbox{
+    background-color:teal;
+}
+.textHappy{
+    background-color:red;
+}
