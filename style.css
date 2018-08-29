@@ -1,0 +1,180 @@
+body{
+    height: 100%;
+    background-color: rgb(102, 47, 47);
+}
+header{
+    color:white;
+    margin-top:30px;
+    margin-left:25px;
+    margin-bottom:5px;
+}
+
+.grid{
+    display:grid;
+    height:100%;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 350px 200px  350px 125px;
+    grid-gap: 10px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.box{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.texthappy{
+    
+    background-color: red;
+}
+.texthappy p{
+    font-size: 30px;
+    word-spacing: 30px;
+    line-height:55px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:20px;
+    font-weight: bold;
+}
+
+.textCupcake, .textLorem,.wordbacon{
+    background-color:rgb(73, 170, 170);
+}
+.textCupcake p{
+    text-align:center left;
+    margin-left:15px;
+    margin-right:15px;
+    line-height:25px;
+    font-weight: 40px;
+}
+.imgtie{
+    display:grid;
+    grid-column: span 2;
+    background-image: url(images/tie.png);
+    background-position: 15% -30%;
+}
+.imgSign{
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-image:url(images/sign.jpg);
+    background-position: 18% 0%;
+}
+.textLorem p{
+    margin-left:15px;
+    margin-right:15px;
+    line-height:30px;
+    font-weight: 40px;
+}
+.imgMoped{
+    display:grid;
+    grid-column: span 2;
+    background-image: url(images/moped.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: 0% 59%;
+}
+.imgsax, .imglight,.imgflower,.wordbacon{
+    display:none;
+}
+
+@media only screen and (min-width:600px){
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(5,1fr);
+        grid-template-rows:repeat(4,150px);
+        grid-gap: 5px;
+        color: white;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .box{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .texthappy{
+        background-color: red;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .imgtie{
+        display:grid;
+        grid-column: span 2;
+        grid-row: span 2;
+        background-size: 825px;
+        background-image: url(images/tie.png);
+        background-repeat: no-repeat;
+        
+    }
+    .imgSign{
+        background-repeat: no-repeat;
+        background-size: 550px;
+        background-image:url(images/sign.jpg);
+        background-position: 18% 0%;
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+    .textLorem p{
+        margin-left:15px;
+        margin-right:15px;
+        line-height:30px;
+        font-weight: 40px;
+    }
+    .imgMoped{
+        display:grid;
+        grid-row: span 2;
+        grid-column: span 2;
+        background-image: url(images/moped.jpg);
+        background-repeat:repeat;
+        background-size: contain;
+        background-size: 300px;
+        background-position: 0% 100%;
+    }
+    .imgsax{
+        display:grid;
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url(images/sax.jpg);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 5% 59%;
+    }
+    .imglight{
+        display:grid;
+        grid-row: 3 / span 1;
+        grid-column: 4 / span 1;
+        background-image: url(images/light.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 30% 59%;
+    }
+    .imgflower{
+        display:grid;
+        grid-row: 4 / span 1;
+        grid-column: 4 / span 1;
+        background-image: url(images/flower.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 10% 59%;
+    }
+    .textCupcake,.textLorem,.wordbacon{
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+    .wordbacon p{
+        text-align:center left;
+        margin-left:15px;
+        margin-right:15px;
+        line-height:25px;
+        font-weight: 40px;
+    }
+    .texthappy p{
+        font-size: 30px;
+        word-spacing: 0px;
+        line-height:55px;
+        font-family: 'Montserrat', sans-serif;
+        margin-left:0px;
+        font-weight: bold;
+    }
+}
